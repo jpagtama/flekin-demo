@@ -1,0 +1,238 @@
+/* css variables located in Flekin.module.css */
+
+.main {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    min-height: 100vh;
+    background-color: var(--secondary-color);
+}
+
+.mainContainer {
+    width: 100%;
+}
+
+.inputResultsContainer {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.resultList {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--tertiary-color);
+    border-radius: 8px;
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.resultField {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+}
+
+.formArea {
+    display: flex;
+    flex-direction: column;
+}
+
+.textLabel {
+    font-family: var(--font-family);
+    color: var(--primary-color);
+    font-size: 1.4rem;
+}
+
+.getScoresBtn {
+    font-family: var(--font-family);
+    font-size: 1rem;
+    padding: 0.5rem 0.8rem;
+    margin: 1rem;
+    align-self: center;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.getScoresBtn:hover {
+    cursor: pointer;
+    animation: inHover 500ms both ease-out;
+}
+
+.disabledBtn {
+    font-family: var(--font-family);
+    font-size: 1rem;
+    padding: 0.5rem 0.8rem;
+    margin: 1rem;
+    align-self: center;
+    border: none;
+    border-radius: 8px;
+    background-color: gray;
+    opacity: 0.3;
+    color: var(--text-color);
+}
+
+.getScoresBtn {
+    animation: outHover 500ms both ease-out;
+}
+
+.aboutContainer {
+    margin-bottom: 2rem;
+}
+
+.aboutDesc {
+    color: #121212;
+    font-size: 1em;
+    margin: 0;
+}
+
+.textArea {
+    height: 30vh;
+    border: none;
+    border-radius: 8px;
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    overflow-y: auto;
+}
+
+.hr {
+    /* border: 1px solid var(--primary-color); */
+    height: 1px;
+    background: rgb(110, 133, 183);
+    background: radial-gradient(circle, rgba(110, 133, 183, 1) 34%, rgba(110, 133, 183, 0.12230829831932777) 100%);
+    margin-bottom: 10rem;
+}
+
+.npmBlock {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.npmBlock svg {
+    align-self: flex-start;
+}
+
+.codeBlock {
+    background-color: #121212;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+}
+
+.codeBlock p {
+    display: block;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    color: var(--neon-green);
+}
+
+.codeArg {
+    color: var(--neon-pink);
+}
+
+.codeComment {
+    display: block;
+    color: #FFD36E;
+}
+
+.commentBlock {
+    display: block;
+    padding-bottom: 2rem;
+}
+
+.numbersDetected {
+    text-align: center;
+    padding: 1rem 0 0 0;
+    align-self: center;
+    color: var(--primary-color);
+}
+
+.errorMsg {
+    padding: 1rem 0 0 0;
+    align-self: center;
+    color: red;
+}
+
+.copyToClip {
+    animation: copyToClip 500ms ease-out both;
+}
+
+.gradeResult {
+    animation: rotateOnY 500ms ease-in both;
+}
+
+.easeResult {
+    animation: rotateOnY 500ms ease-in both 100ms;
+}
+
+.wordsResult {
+    animation: rotateOnY 500ms ease-in both 200ms;
+}
+
+.syllableResult {
+    animation: rotateOnY 500ms ease-in both 300ms;
+}
+
+.sentenceResult {
+    animation: rotateOnY 500ms ease-in both 400ms;
+}
+
+@keyframes inHover {
+    0% {
+        transform: scale(1)
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes outHover {
+    0% {
+        transform: scale(1.1)
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes rotateOnY {
+    from {
+        transform: rotateY(270deg);
+        opacity: 0;
+    }
+
+    to {
+        transform: rotateY(360deg);
+        opacity: 1;
+    }
+}
+
+@keyframes copyToClip {
+    0% {
+        transform: scaleY(1);
+    }
+
+    25% {
+        transform: scaleY(1.2);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+@media (min-width: 768px) {
+    .mainContainer {
+        width: 60vw;
+    }
+}

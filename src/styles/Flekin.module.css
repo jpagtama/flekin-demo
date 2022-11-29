@@ -1,0 +1,26 @@
+/* color scheme: https://colorhunt.co/palette/6e85b7b2c8dfc4d7e0f8f9d7 */
+
+.flekin {
+    font-weight: normal;
+    background-color: var(--secondary-color);
+    --primary-color: #6E85B7;
+    --secondary-color: #B2C8DF;
+    --tertiary-color: #C4D7E0;
+    --text-color: #F8F9D7;
+    --font-family: 'Baloo 2', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    --neon-green: #14C38E;
+    --neon-pink: #A91079;
+}
+
+.flekin h1 {
+    font-family: var(--font-family);
+    text-transform: none;
+    color: var(--text-color);
+}
+
+.flekin h2 {
+    font-family: var(--font-family);
+    text-transform: none;
+    text-align: left;
+    color: var(--primary-color);
+}

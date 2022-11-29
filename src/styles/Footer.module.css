@@ -1,0 +1,21 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+    min-height: 15rem;
+    background-color: var(--text-color);
+    margin-top: 10rem;
+}
+
+.footer span {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.link {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--primary-color);
+}
